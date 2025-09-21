@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        min-height: 98vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #18191c;
+      }
+
+      .controls {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        background-color: #fff;
+        padding: 12px;
+        display: flex;
+        flex-flow: column nowrap;
+        transform: translateY(-50%);
+      }
+
+      .box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+
+      .gray {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #555;
+        z-index: attr(data-z-index number, 0);
+      }
+
+      .green {
+        z-index: 1;
+        background-color: #22c55e88;
+      }
+
+      .blue {
+        z-index: 2;
+        background-color: #3b82f688;
+        top: -50px;
+        left: 50px;
+      }
+
+      .red {
+        z-index: 3;
+        background-color: #ef444488;
+        top: -100px;
+        left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <code>z-index</code>
+      <button
+        onclick="document.querySelector('.gray').style.zIndex = +this.textContent"
+      >
+        0
+      </button>
+      <button
+        onclick="document.querySelector('.gray').style.zIndex = +this.textContent"
+      >
+        1
+      </button>
+      <button
+        onclick="document.querySelector('.gray').style.zIndex = +this.textContent"
+      >
+        2
+      </button>
+      <button
+        onclick="document.querySelector('.gray').style.zIndex = +this.textContent"
+      >
+        3
+      </button>
+      <button
+        onclick="document.querySelector('.gray').style.zIndex = +this.textContent"
+      >
+        4
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="box gray"></div>
+      <div class="box green">z-index 1</div>
+      <div class="box blue">z-index 2</div>
+      <div class="box red">z-index 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+- `yarn build slides/1/*.md --out ./` - сборка

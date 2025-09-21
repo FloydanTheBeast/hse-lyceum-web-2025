@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Семантическая HTML-страница</title>
+    <style>
+      html {
+        font-size: 10px;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      nav,
+      main,
+      article,
+      section,
+      aside {
+        padding: 10px;
+        margin: 10px 0;
+      }
+      header {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 0;
+      }
+      nav {
+        background: #34495e;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+      }
+      nav li {
+        margin: 0 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        gap: 1rem;
+      }
+      article {
+        flex: 3;
+        background: #ecf0f1;
+      }
+      aside {
+        flex: 1;
+        background: #bdc3c7;
+      }
+      section {
+        background: #dfe6e9;
+        margin: 15px 0;
+      }
+      footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 0;
+      }
+      .article-header {
+        border-bottom: 2px solid #7f8c8d;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      time {
+        color: #eee;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Header</h2>
+      <p>Пример правильного использования HTML5 семантических тегов</p>
+    </header>
+
+    <nav>
+      <h2 style="color: #fff; text-align: center;">Nav</h2>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <article>
+            <header class="article-header">
+                <h2>Section</h2>
+                <p>Опубликовано: <time datetime="2025-09-05">15 сентября 2025</time>, автор: <address>Иван Иванов</address></p>
+            </header>
+            
+            <section>
+                <h3>Введение</h3>
+                <p>Это пример использования семантических тегов HTML5. Семантические теги помогают поисковым системам и screen readers лучше понимать структуру вашего сайта.</p>
+                <p>В этой статье мы рассмотрим основные семантические теги и их правильное применение.</p>
+            </section>
+            
+            <section>
+                <h3>Преимущества семантической разметки</h3>
+                <p>Семантическая разметка улучшает доступность, SEO и упрощает поддержку кода.</p>
+                <p>Теги как <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code> и <code>&lt;section&gt;</code> четко определяют назначение каждого блока на странице.</p>
+            </section>
+            
+            <section>
+                <h3>Заключение</h3>
+                <p>Использование семантических тегов - это хорошая практика, которая делает ваш код более понятным и структурированным.</p>
+                <p>Старайтесь всегда использовать соответствующие семантические теги вместо универсальных <code>&lt;div&gt;</code> там, где это уместно.</p>
+            </section>
+            
+            <footer>
+                <p>Теги: <mark>HTML5</mark>, <mark>семантика</mark>, <mark>веб-разработка</mark></p>
+            </footer>
+        </article>
+
+        <aside>
+            <h3>Aside</h3>
+            <p>Здесь может быть реклама, ссылки на related content, или дополнительная навигация.</p>
+            
+            <section>
+              <h3>Section</h3>
+                <h4>Популярные статьи</h4>
+                <ul>
+                    <li><a href="#">Основы HTML5</a></li>
+                    <li><a href="#">CSS для начинающих</a></li>
+                    <li><a href="#">JavaScript основы</a></li>
+                </ul>
+            </section>
+            
+            <section>
+              <h3>Section</h3>
+                <h4>Подписка</h4>
+                <p>Подпишитесь на нашу рассылку для получения новых статей:</p>
+                <form>
+                    <input type="email" placeholder="Ваш email">
+                    <button type="submit">Подписаться</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+      <h3>Footer</h3>
+        <p>© 2025 Мой семантический сайт. Все права защищены.</p>
+        <p>Контактная информация: <address>email@example.com</address></p>
+        <p><time datetime="2023-10-15">Последнее обновление: 5 сентября 2025</time></p>
+    </footer>
+  </body>
+</html>

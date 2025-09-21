@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоэлементы</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 24px;
+      font-family: Roboto, sans-serif;
+      text-align: center;
+      background-color: #181a1b;
+      color: #ffffff;
+    }
+
+    code {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 8px 0;
+    }
+
+    .card {
+      padding: 4px;
+      background-color: #101211;
+      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    button {
+      display: block;
+      padding: 4px;
+      background-color: transparent;
+      border: unset;
+      border-bottom: 1px solid orange;
+      color: #fff;
+      margin: 8px auto;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: orange;
+      scale: 1.1;
+      cursor: pointer;
+    }
+
+    button.transitioned {
+      transition: background-color 0.25s;
+    }
+
+    button.ease-in {
+      transition: all 0.25s ease-in;
+    }
+
+    button.ease-out {
+      transition: all 0.25s ease-out 0.5s;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="card">
+        <button class="el-hover">Кнопка без перехода</button>
+        <code>transition: background-color 0.25s</code>
+        <button class="el-hover transitioned">Кнопка с переходом</button>
+        <code>transition: all 0.25s ease-in</code>
+        <button class="el-hover ease-in">Кнопка с переходом</button>
+        <code>transition: all 0.25s ease-out 0.5s</code>
+        <button class="el-hover ease-out">Кнопка с переходом</button>
+      </div>
+    </div>
+  </body>
+</html>

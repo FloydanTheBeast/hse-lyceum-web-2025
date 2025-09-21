@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Псевдоэлементы</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 24px;
+      font-family: Roboto, sans-serif;
+      text-align: center;
+      background-color: #181a1b;
+      color: #ffffff;
+    }
+
+    code {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    p {
+      font-size: 12px;
+      margin: 8px 0;
+    }
+
+    .card {
+      padding: 4px;
+      background-color: #101211;
+      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .el-before::before {
+      content: "А это текст, созданный при помощи ::before";
+      display: block;
+      background-color: red;
+      border-radius: 4px;
+      font-size: 8px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .el-after::after {
+      content: "А это текст, созданный при помощи ::after";
+      display: block;
+      background-color: red;
+      border-radius: 4px;
+      font-size: 8px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .el-first-letter::first-letter {
+      font-size: 150%;
+      font-family: "Times New Roman", Times, serif;
+      color: green;
+    }
+
+    .el-first-line::first-line {
+      background-color: orange;
+    }
+
+    .el-selection::selection {
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div class="card">
+        <code>::before</code>
+        <p class="el-before">Основной текст</p>
+      </div>
+      <div class="card">
+        <code>::after</code>
+        <p class="el-after">Основной текст</p>
+      </div>
+      <div class="card">
+        <code>::first-letter</code>
+        <p class="el-first-letter">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="card">
+        <code>::first-line</code>
+        <p class="el-first-line">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+      </div>
+      <div class="card">
+        <code>::selection</code>
+        <p class="el-selection">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

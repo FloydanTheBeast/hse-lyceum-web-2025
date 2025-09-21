@@ -1,0 +1,21 @@
+{
+  "name": "10-2025",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.1.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-slidev": "^1.0.5"
+  },
+  "packageManager": "yarn@1.22.21"
+}
