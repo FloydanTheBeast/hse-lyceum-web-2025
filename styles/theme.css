@@ -2,8 +2,8 @@ h1 {
   font-weight: 800;
 }
 
-thead td {
-  font-weight: 600;
+.slidev-layout thead td, .slidev-layout thead th {
+  font-weight: 700;
   font-size: 18px;
 }
 

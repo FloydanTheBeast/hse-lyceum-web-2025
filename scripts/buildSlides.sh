@@ -10,7 +10,7 @@ for filepath in slides/1*.md; do
   filename_without_ext=$(echo $filename | cut -d"." -f1)
 
   # Build a single slide
-  yarn build $filepath --base "/$repo_name/$filename_without_ext/" --out "../dist/$filename_without_ext" --download
+  yarn build $filepath --base "/$repo_name/$filename_without_ext/" --out "../dist/$filename_without_ext"
 done
 
 # FIXME: Copy slides static assets because static file urls resolve incorrectly

@@ -1,4 +1,4 @@
-name: Deploy slides to GH pages
+name: Deploy to GH pages
 
 on:
   workflow_dispatch:
@@ -35,7 +35,10 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build slides
-        run: yarn build:ci ${{ github.event.repository.name }}
+        run: yarn build:slides-ci ${{ github.event.repository.name }}
+
+      - name: Build website
+        run: yarn build:website-ci --outDir ../dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

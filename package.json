@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "build:ci": "sh scripts/buildSlides.sh",
+    "build:slides-ci": "sh scripts/buildSlides.sh",
+    "build:website-ci": "vite build ./website --outDir ../dist",
     "dev": "slidev --open",
+    "dev:website": "vite ./website",
     "export": "slidev export"
   },
   "dependencies": {
