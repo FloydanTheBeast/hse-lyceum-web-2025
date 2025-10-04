@@ -1,8 +1,23 @@
+html.light {
+  .slidev-layout blockquote code {
+    font-weight: 700;
+    background-color: #e5e7eb;
+  }
+}
+
+html.dark {
+  .slidev-layout blockquote code {
+    font-weight: 800;
+    background-color: #444;
+  }
+}
+
 h1 {
   font-weight: 800;
 }
 
-.slidev-layout thead td, .slidev-layout thead th {
+.slidev-layout thead td,
+.slidev-layout thead th {
   font-weight: 700;
   font-size: 18px;
 }
@@ -33,11 +48,6 @@ figcaption {
     padding-top: 4px;
     padding-bottom: 4px;
   }
-}
-
-.slidev-layout blockquote code {
-  font-weight: 800; 
-  background-color: #444;
 }
 
 .slidev-layout a:has(code) {
