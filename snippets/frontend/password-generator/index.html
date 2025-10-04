@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Генератор паролей</title>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="card generated-password"></div>
+
+    <div class="card">
+      <div class="password-length-container">
+        <label for="password-length">Длина пароля</label>
+        <input type="range" id="password-length" value="5" min="5" max="20" />
+        <p id="password-length-text">5</p>
+      </div>
+
+      <div class="settings-container">
+        <label for="include-uppercase"
+          >Включить символы верхнего регистра (A-Z)</label
+        >
+        <input
+          type="checkbox"
+          id="include-uppercase"
+          data-setting="uppercase"
+        />
+
+        <label for="include-lowercase"
+          >Включить нижнего нижнего регистра (a-z)</label
+        >
+        <input
+          type="checkbox"
+          name="include-lowercase"
+          id="include-lowercase"
+          data-setting="lowercase"
+        />
+
+        <label for="include-digits">Включить цифры (0-9)</label>
+        <input type="checkbox" id="include-digits" data-setting="digits" />
+
+        <label for="include-special-symbols"
+          >Включить специальные символы</label
+        >
+        <input
+          type="checkbox"
+          id="include-special-symbols"
+          data-setting="special-symbols"
+        />
+      </div>
+      <button id="generate-password-btn">Сгенерировать пароль</button>
+    </div>
+  </body>
+</html>

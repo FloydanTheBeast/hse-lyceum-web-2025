@@ -1,0 +1,74 @@
+body {
+  background-color: #2f3542;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  background-color: #2ed573;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  margin-top: 12px;
+  transition: background-color .3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #7bed9f;
+}
+
+.card {
+  background-color: #57606f;
+  max-width: 500px;
+  min-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.card:first-child {
+  margin-top: 200px;
+}
+
+.generated-password {
+  height: 30px;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.password-length-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#password-length-text {
+  display: inline-block;
+  margin: 0 0 0 auto;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #1e90ff;
+}
+
+.settings-container {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  row-gap: 6px;
+  align-items: center;
+
+  input {
+    width: 24px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+

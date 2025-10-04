@@ -91,6 +91,19 @@ export const SLIDES: Slide[] = [
     path: "10-4",
   },
   {
+    title: "Git. JS - делегирование событий, структуры данных. Адаптивность.",
+    description: `
+- Git
+- JavaScript
+  - Делегирование событий
+  - Встроенные структуры данных - \`Set\`, \`Map\`
+- Адаптивность веб-страниц
+    `,
+    grade: 10,
+    tags: ["Git", "Frontend", "JavaScript", "CSS"],
+    path: "10-5",
+  },
+  {
     title: "Вводное занятие",
     description: `
 - Содержание курса
@@ -149,5 +162,18 @@ export const SLIDES: Slide[] = [
     grade: 11,
     tags: ["Backend", "API", "FastAPI", "Проектирование"],
     path: "11-4",
+  },
+  {
+    title: "CORS. Документирование.",
+    description: `
+- Мехазинм безопасности CORS
+- Документация
+  - OpenAPI и инструменты (Swagger, Redoc)
+  - JSDoc
+  - Python docstrings
+    `,
+    grade: 11,
+    tags: ["Backend", "Безопаность", "Документация"],
+    path: "11-5",
   },
 ];
