@@ -200,6 +200,6 @@ export const SLIDES: Slide[] = [
     `,
     grade: 11,
     tags: ["Backend", "Качество кода", "Базы данных", "SQL", "Git"],
-    path: "11-5",
+    path: "11-6",
   },
 ];
