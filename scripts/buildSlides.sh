@@ -1,3 +1,5 @@
+#!/bin/sh
+
 repo_name=$1
 
 if [[ -z $repo_name ]]; then

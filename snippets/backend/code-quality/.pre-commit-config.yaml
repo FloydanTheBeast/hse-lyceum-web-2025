@@ -1,0 +1,35 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.2.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-yaml
+  - id: check-added-large-files
+- repo: local
+  hooks:
+    - id: ruff
+      name: Check with Ruff
+      entry: uv run ruff
+      language: system
+      pass_filenames: false
+      always_run: true
+      args: ["check", ".", "--fix"]
+    - id: ruff-format
+      name: Format with ruff
+      entry: uv run ruff format
+      language: system
+      pass_filenames: false
+      always_run: false
+    - id: mypy
+      name: Validate types with MyPy
+      entry: uv run mypy
+      language: system
+      types: [python]
+      pass_filenames: false
+      args:
+        - "."
+    - id: custom-script
+      name: Custom script that does nothing
+      entry: ./scripts/script.sh
+      language: script

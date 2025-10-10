@@ -1,0 +1,36 @@
+[project]
+name = "code-quality"
+version = "0.1.0"
+description = "Проект для демонстрации работы инструментов контроля качества"
+readme = "README.md"
+authors = [{ name = "Shadi Abdelsalam", email = "floydanthebeast@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = ["ruff>=0.13.3"]
+
+# [build-system]
+# requires = ["uv_build >= 0.8.17, <0.9.0"]
+# build-backend = "uv_build"
+
+# ref: https://docs.astral.sh/ruff/settings/
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+# Правила для линтинга
+# ref: https://docs.astral.sh/ruff/rules/
+[tool.ruff.lint]
+extend-select = ["D", "N", "F"]
+ignore = ["D211", "D213"]
+
+# ref: https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+pretty = true
+show_error_codes = true
+implicit_reexport = true
+warn_unused_ignores = false
+warn_return_any = true
+
+[dependency-groups]
+dev = ["mypy>=1.18.2", "pre-commit>=4.3.0"]
