@@ -67,7 +67,7 @@ export const SLIDES: Slide[] = [
     path: "10-3",
   },
   {
-    title: "JavaScript - объекты, функции, классы и событийная модель",
+    title: "JavaScript: объекты, функции, классы и событийная модель",
     description: `
 - Объекты
   - Как хранятся
@@ -91,7 +91,7 @@ export const SLIDES: Slide[] = [
     path: "10-4",
   },
   {
-    title: "Git. JS - делегирование событий, структуры данных. Адаптивность.",
+    title: "Git. JS: делегирование событий, структуры данных. Адаптивность.",
     description: `
 - Git
 - JavaScript
@@ -102,6 +102,22 @@ export const SLIDES: Slide[] = [
     grade: 10,
     tags: ["Git", "Frontend", "JavaScript", "CSS"],
     path: "10-5",
+  },
+  {
+    title: "CSS: анимации и БЭМ. JS: основы Web API и асинхронность",
+    description: `
+- CSS
+  - Анимации
+  - Методология БЭМ
+- Основы Web API
+- Асинхронность в JS
+  - Коллбэки
+  - Объект \`Promise\`
+  - \`async\`, \`await\`
+    `,
+    grade: 10,
+    tags: ["Frontend", "JavaScript", "CSS"],
+    path: "10-6",
   },
   {
     title: "Вводное занятие",

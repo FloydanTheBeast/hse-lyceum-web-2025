@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      html {
+        background-color: #18191c;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .animated {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        animation:
+          rotate-and-translate 3s running alternate linear infinite,
+          round-off 1s paused alternate infinite backwards;
+      }
+
+      .animated:hover {
+        animation-play-state: running;
+      }
+
+      @keyframes round-off {
+        from {
+          border-radius: 0;
+          background-color: #22c55e;
+        }
+
+        to {
+          border-radius: 50%;
+          background-color: #ef4444;
+        }
+      }
+
+      @keyframes rotate-and-translate {
+        from {
+          left: 100px;
+          top: 100px;
+          rotate: 0deg;
+        }
+
+        to {
+          left: 50%;
+          top: 50%;
+          rotate: 360deg;
+        }
+      }
+    </style>
+
+    <div class="card">
+      <h1>Наведите курсор на квадрат!</h1>
+
+      <div class="animated"></div>
+    </div>
+  </body>
+</html>
