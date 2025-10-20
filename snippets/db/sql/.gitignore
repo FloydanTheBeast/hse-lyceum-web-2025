@@ -1,0 +1,3 @@
+chinook_copy.db
+*.db-shm
+*.db-wal

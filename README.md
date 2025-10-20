@@ -16,6 +16,7 @@
 ## Домашние задания
 ### 10 класс
 - [Домашнее задание №1](./homework/hw-10-1.md)
+- [Домашнее задание №2](./homework/hw-10-2.md)
 
 ### 11 класс
 - [Домашнее задание №1](./homework/hw-11-1.md)
@@ -40,7 +41,10 @@
 
 - [YouTube - Яндекс - Школа Бэкенд Разработки 2024 (Python)](https://www.youtube.com/playlist?list=PLXtiZNKIobF6joDRoEgGCqJ-RK02sf91V) - плейлист лекций от ШБР Яндекса 2024-го, есть и другие языки (C++ и Java)
 - [GitHub - Backend Cheats](https://github.com/cheatsnake/backend-cheats) - визуальные шпаргалки по основным темам бэкенд-разработки
-- [Database of Databases](https://dbdb.io/) - база данных о базах данных
+- [SQL Academy](https://sql-academy.org/ru) - курс и задачи по SQL (на русском)
+- [SQLBolt](https://sqlbolt.com/) - интерактивный курс по основам SQL (на английском)
+- [Яндекс Практикум - Самоучитель SQL](https://practicum.yandex.ru/blog/samouchitel-sql) - серия статей про SQL
+- [Database of Databases](https://dbdb.io/) - информация о различных СУБД
 
 ## Скрипты
 - `yarn build slides/1*.md --out ./` - сборка проекта
