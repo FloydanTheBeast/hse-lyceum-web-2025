@@ -15,6 +15,8 @@ export default mergeConfigs([
         collections: {
           carbon: () =>
             import("@iconify-json/carbon/icons.json").then((i) => i.default),
+          logos: () =>
+            import("@iconify-json/logos/icons.json").then((i) => i.default),
         },
       }),
     ],
