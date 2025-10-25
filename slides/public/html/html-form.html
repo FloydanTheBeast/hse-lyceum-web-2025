@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Пример формы — много элементов</title>
+  </head>
+  <body>
+    <!-- Простая форма, демонстрирующая множество HTML-элементов -->
+    <form
+      method="post"
+      enctype="multipart/form-data"
+      autocomplete="on"
+      novalidate
+    >
+      <!-- Метаданные / скрытые поля -->
+      <input type="hidden" name="form_id" value="example-001" />
+
+      <fieldset>
+        <legend>Контактная информация</legend>
+
+        <label for="fullname">ФИО:</label>
+        <input
+          id="fullname"
+          name="fullname"
+          type="text"
+          placeholder="Иван Иванов"
+          required
+          minlength="2"
+          maxlength="100"
+        />
+
+        <br />
+
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="name@example.com"
+          required
+        />
+
+        <br />
+
+        <label for="phone">Телефон:</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          pattern="^\+?\d{7,15}$"
+          placeholder="+371..."
+          title="Номер в международном формате"
+        />
+
+        <br />
+
+        <label for="website">Веб-сайт:</label>
+        <input id="website" name="website" type="url" placeholder="https://" />
+
+        <br />
+
+        <label for="birthdate">Дата рождения:</label>
+        <input id="birthdate" name="birthdate" type="date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Учётные данные</legend>
+
+        <label for="username">Логин:</label>
+        <input
+          id="username"
+          name="username"
+          type="search"
+          placeholder="поиск/логин"
+        />
+
+        <br />
+
+        <label for="password">Пароль:</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          minlength="6"
+          required
+        />
+
+        <br />
+
+        <label for="age">Возраст:</label>
+        <input id="age" name="age" type="number" min="0" max="120" value="30" />
+
+        <br />
+
+        <label for="satisfaction">Уровень удовлетворённости (0–10):</label>
+        <input
+          id="satisfaction"
+          name="satisfaction"
+          type="range"
+          min="0"
+          max="10"
+          value="7"
+          oninput="document.getElementById('satisfactionOutput').value = this.value"
+        />
+        <output id="satisfactionOutput">7</output>
+      </fieldset>
+
+      <fieldset>
+        <legend>Предпочтения и выборы</legend>
+
+        <p>Пол:</p>
+        <label><input type="radio" name="gender" value="male" /> Мужской</label>
+        <label
+          ><input type="radio" name="gender" value="female" /> Женский</label
+        >
+
+        <br />
+
+        <p>Интересы (выберите все подходящие):</p>
+        <label
+          ><input type="checkbox" name="interests" value="frontend" />
+          Frontend</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="backend" />
+          Backend</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="design" />
+          Дизайн</label
+        >
+        <label
+          ><input type="checkbox" name="interests" value="devops" />
+          DevOps</label
+        >
+
+        <br />
+
+        <label for="country">Страна:</label>
+        <select id="country" name="country" required>
+          <option value="">— выбрать —</option>
+          <optgroup label="Основное">
+            <option value="ru">Россия</option>
+          </optgroup>
+          <optgroup label="Другое">
+            <option value="lv">Не Россия</option>
+          </optgroup>
+        </select>
+
+        <br />
+
+        <label for="languages">Языки (несколько):</label>
+        <select id="languages" name="languages[]" multiple size="4">
+          <option value="ru">Русский</option>
+          <option value="en">Английский</option>
+          <option value="de">Немецкий</option>
+          <option value="de">Французский</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Текстовые поля и подсказки</legend>
+
+        <label for="about">О себе:</label>
+        <textarea
+          id="about"
+          name="about"
+          rows="4"
+          cols="50"
+          placeholder="Расскажите кратко о себе"
+        ></textarea>
+
+        <br />
+
+        <label for="position">Должность (ввод с подсказками):</label>
+        <input
+          id="position"
+          name="position"
+          list="positions"
+          placeholder="Начните вводить..."
+        />
+        <datalist id="positions">
+          <option value="Frontend-разработчик"></option>
+          <option value="Backend-разработчик"></option>
+          <option value="Fullstack-разработчик"></option>
+          <option value="UI/UX дизайнер"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Файлы и мультимедиа</legend>
+
+        <label for="avatar">Аватар (изображение):</label>
+        <input
+          id="avatar"
+          name="avatar"
+          type="file"
+          accept="image/*"
+          aria-describedby="avatarHelp"
+        />
+
+        <div id="avatarHelp">
+          Допустимые форматы: jpg, png. Максимум 1 файл.
+        </div>
+
+        <br />
+
+        <label for="docs">Документы (несколько):</label>
+        <input
+          id="docs"
+          name="docs[]"
+          type="file"
+          multiple
+          accept=".pdf,.doc,.docx"
+        />
+
+        <br />
+
+        <label for="favoriteColor">Любимый цвет:</label>
+        <input
+          id="favoriteColor"
+          name="favoriteColor"
+          type="color"
+          value="#0066cc"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Прочее</legend>
+
+        <label for="progress">Прогресс выполнения (пример):</label>
+        <progress id="progress" value="35" max="100">35%</progress>
+
+        <br />
+
+        <label for="load">Уровень загрузки (метр):</label>
+        <meter
+          id="load"
+          min="0"
+          max="1"
+          low="0.25"
+          high="0.75"
+          optimum="0.5"
+          value="0.4"
+        >
+          40%
+        </meter>
+
+        <br />
+
+        <label for="consent">Согласие с правилами:</label>
+        <input id="consent" name="consent" type="checkbox" required />
+        <label for="consent">Я прочитал(а) и согласен(на)</label>
+      </fieldset>
+
+      <p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+      </p>
+    </form>
+
+    <script>
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Форма успешно отправлена");
+      });
+    </script>
+  </body>
+</html>
