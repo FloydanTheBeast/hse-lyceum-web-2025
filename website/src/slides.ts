@@ -120,6 +120,53 @@ export const SLIDES: Slide[] = [
     path: "10-6",
   },
   {
+    title: "JS - Забытые темы",
+    description: `
+- Логические операторы
+- Оператор нулевого слияния и присваивания
+- Опциональные цепочки
+- Spread-оператор
+- Деструктуризация массивов и объктов
+- Стилизация при помощи JS
+- JSON
+- Копирование ссылочных типов
+- Хранение данных в браузере - \`localStorage\`, \`sessionStorage\`, Cookie
+- Пользовательские события
+- Основы сетевых запросов
+    `,
+    grade: 10,
+    tags: ["Frontend", "JavaScript", "Компьютерные сети"],
+    path: "10-7",
+  },
+  {
+    title: "HTML: async, defer, формы. JS: location, history, маршрутизация",
+    description: `
+- HTML
+  - \`async\`, \`defer\`
+  - Формы: основные элементы, валидация, обработка при помощи JS
+- JS
+  - Регулярные выражения
+  - Объект истории - \`window.history\`
+  - Основы клиентской маршрутизации
+    `,
+    grade: 10,
+    tags: ["Frontend", "HTML", "JavaScript"],
+    path: "10-8",
+  },
+  {
+    title: "Углублённый JS",
+    description: `
+- Функции и объекты первого класса
+- Замыкания (Closure)
+- Лексическая область видимости и лексическое окружение
+- Событийный цикл (Event Loop)
+- Основы JS-модулей и динамический импорт
+    `,
+    grade: 10,
+    tags: ["Frontend", "JavaScript"],
+    path: "10-9",
+  },
+  {
     title: "Вводное занятие",
     description: `
 - Содержание курса
@@ -217,5 +264,54 @@ export const SLIDES: Slide[] = [
     grade: 11,
     tags: ["Backend", "Качество кода", "Базы данных", "SQL", "Git"],
     path: "11-6",
+  },
+  {
+    title: "SQL: DDL, Constraints, DML, DQL",
+    description: `
+- Язык определения данных (DDL)
+  - Ограничения (Constraints)
+- Язык манипуляции данными (DML)
+- DQL
+  - Опертор \`SELECT\`
+  - Сортировка - оператор \`ORDER BY\`
+  - Объединение таблиц (оператор \`JOIN\`) и его виды
+  - Группировка и агрегация данных - оператор \`GROUP BY\`
+  - Подзапросы (Subqueries)
+    `,
+    grade: 11,
+    tags: ["Backend", "SQL"],
+    path: "11-7",
+  },
+  {
+    title:
+      "SQL: Рекурсивные запросы, оконные функции, представления, индексы. Контейнеризация: Docker и Docker-compose",
+    description: `
+- SQL
+  - Рекурсивные запросы
+  - Оконные функции
+  - Представления (SQL View)
+  - Индексы, их виды, B и B+-деревья
+- Контейнеризация
+  - Docker: конфигурация, тома, и сети
+  - Docker-compose
+    `,
+    grade: 11,
+    tags: ["Backend", "SQL", "DevOps", "Контейнеризация"],
+    path: "11-8",
+  },
+  {
+    title: "Основы PostgreSQL. Дравйверы и ORM",
+    description: `
+- PostgreSQL
+  - Схемы
+  - Роли и права
+  - Основы \`EXPLAIN ANALYZE\`
+- Взамодействие с БД в программах
+  - Драйверы
+  - ORM, основы SQLAlchemy
+    `,
+    grade: 11,
+    tags: ["Backend", "Базы данных", "SQL", "Python"],
+    path: "11-9",
   },
 ];
