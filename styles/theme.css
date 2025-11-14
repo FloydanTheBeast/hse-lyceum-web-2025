@@ -33,8 +33,11 @@ td {
 
 figcaption {
   text-align: center;
-  color: #bbb;
   font-size: 80%;
+  
+  & *:not(code) {
+    color: #bbb;
+  }
 }
 
 .slidev-layout blockquote {

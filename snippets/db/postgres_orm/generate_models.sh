@@ -1,0 +1,1 @@
+sqlacodegen postgresql://postgres:@localhost:5432/dvdrental > models/models.py

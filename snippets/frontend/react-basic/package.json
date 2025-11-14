@@ -1,0 +1,16 @@
+{
+  "name": "react-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./app.jsx --out-file dist/app.js",
+    "build:watch": "yarn build --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5"
+  }
+}

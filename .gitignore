@@ -9,3 +9,6 @@ components.d.ts
 
 # Python
 __pycache__
+
+# Misc
+/how-tos

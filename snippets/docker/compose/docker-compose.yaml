@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  app:
+    build: . # Собирает образ из Dockerfile в текущей папке
+    container_name: backend
+    ports:
+      - 3000:3000 # Проброс портов
+    environment:
+      - DATABASE_URL=postgresql://postgres:example@db:5432/mydb
+    depends_on:
+      - db # Запустится только после сервиса db
+
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data # Персистентность данных
+
+volumes: # Объявление томов
+  pgdata:
