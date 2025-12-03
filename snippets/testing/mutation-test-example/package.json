@@ -1,0 +1,17 @@
+{
+  "name": "mutation-test-example",
+  "version": "1.0.0",
+  "main": "test.spec.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:mutation": "stryker run"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@stryker-mutator/core": "^9.4.0",
+    "@stryker-mutator/jest-runner": "^9.4.0",
+    "jest": "^30.2.0"
+  }
+}

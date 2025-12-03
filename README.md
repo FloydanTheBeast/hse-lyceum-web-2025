@@ -47,5 +47,11 @@
 - [Яндекс Практикум - Самоучитель SQL](https://practicum.yandex.ru/blog/samouchitel-sql) - серия статей про SQL
 - [Database of Databases](https://dbdb.io/) - информация о различных СУБД
 
+### Тестирование
+
+- [Хекслет - Курс «Введение в тестирование веб-приложений»](https://ru.hexlet.io/courses/web-testing-basics)
+- [The 100-Year QA-Textbook на русском](https://mentorpiece.ru/100/may-2024/) - крайне обширный интерактивный учебник по тестированию
+- [GitHub - Александр Беспоясов - Разработка крестиков-ноликов по TDD](https://github.com/bespoyasov/ttt-tdd)
+
 ## Скрипты
 - `yarn build slides/1*.md --out ./` - сборка проекта

@@ -10,5 +10,6 @@ components.d.ts
 # Python
 __pycache__
 
-# Misc
+# TODO: временно
 /how-tos
+fullstack-example
