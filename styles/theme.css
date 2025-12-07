@@ -34,9 +34,10 @@ td {
 figcaption {
   text-align: center;
   font-size: 80%;
-  
-  & *:not(code) {
-    color: #bbb;
+  color: #bbb;
+
+  & code {
+    color: initial;
   }
 }
 
