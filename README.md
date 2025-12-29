@@ -38,6 +38,9 @@
 
 - [YouTube - Яндекс - Школа Разработки Интерфейсов 2024](https://youtube.com/playlist?list=PLXtiZNKIobF6U1V0yV248MT8ubBMg8iH2&si=sy0UzxvcIFq7T4zA) - плейлист лекций от ШРИ Яндекса 2024-го
 - [learn.javascript.ru](https://learn.javascript.ru) - современный учебник JavaScript
+- [TypeHero](https://typehero.dev/explore) - сайт для решения задач на TypeScript-типы
+- [MyJs - Карманная книга по TypeScript](https://my-js.org/docs/guide/ts)
+- [GitHub - Глубокое погружение в TypeScript](https://github.com/etroynov/typescript-book/blob/master/SUMMARY.md) - книга по углублённому TypeScript
 
 ### Бэкенд
 
