@@ -5,7 +5,7 @@ T = TypeVar('T', int, float, default=float)
 
 
 class Queue(Generic[T]):
-    _list: List[T]
+    _list: list[T]
 
     def __init__(self) -> None:
         self._list = []
@@ -26,7 +26,7 @@ q.append(5.5)
 q.append('test')
 
 # Тип-псевдоним
-StrListAlias: TypeAlias = List[str]
+StrListAlias: TypeAlias = list[str]
 
 Indentifier: TypeAlias = str
 

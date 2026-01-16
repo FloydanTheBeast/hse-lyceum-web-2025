@@ -3,7 +3,7 @@ import asyncio
 
 async def async_number_generator(limit):
     for i in range(limit):
-        # await asyncio.sleep(1)  # Имитация асинхронной операции
+        await asyncio.sleep(1)  # Имитация асинхронной операции
         yield i
 
 
