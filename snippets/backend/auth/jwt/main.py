@@ -1,5 +1,9 @@
+import base64
+import hashlib
+import hmac
+import json
+import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import json, time, hmac, hashlib, base64
 
 SECRET = b"someverysecretkey1337"
 
@@ -45,8 +49,8 @@ def verify_jwt(token: str):
     except Exception:
         return None
 
-class SimpleJWTServer(BaseHTTPRequestHandler):
 
+class SimpleJWTServer(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path == "/login":
             self.handle_login()
@@ -65,14 +69,11 @@ class SimpleJWTServer(BaseHTTPRequestHandler):
         """Выдаём пару токенов"""
         user_id = "user123"
 
-        access = create_jwt(
-            {"user_id": user_id, "rt": False},
-            exp_seconds=30
-        )
+        access = create_jwt({"user_id": user_id, "rt": False}, exp_seconds=30)
 
         refresh = create_jwt(
             {"user_id": user_id, "rt": True},
-            exp_seconds=3600  # 1 час
+            exp_seconds=3600,  # 1 час
         )
 
         self.respond({"access_token": access, "refresh_token": refresh})
@@ -90,14 +91,8 @@ class SimpleJWTServer(BaseHTTPRequestHandler):
         user_id = payload["user_id"]
 
         # Выдаём новую пару
-        access = create_jwt(
-            {"user_id": user_id, "rt": False},
-            exp_seconds=30
-        )
-        refresh = create_jwt(
-            {"user_id": user_id, "rt": True},
-            exp_seconds=3600
-        )
+        access = create_jwt({"user_id": user_id, "rt": False}, exp_seconds=30)
+        refresh = create_jwt({"user_id": user_id, "rt": True}, exp_seconds=3600)
 
         self.respond({"access_token": access, "refresh_token": refresh})
 
