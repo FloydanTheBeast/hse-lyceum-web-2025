@@ -297,6 +297,23 @@ export const SLIDES: Slide[] = [
     path: "10-14",
   },
   {
+    title: "Данные в реальном времени; CI/CD",
+    description: `
+- Данные в реальном времени
+  - Short- и long-polling
+  - SSE (Server sent events)
+  - WebSocket
+- Что такое веб-сокеты и как они работают?
+- CI/CD
+  - Что это такое и зачем используется?
+  - Примеры инструментов
+  - Примеры пайплайна для GitHub Actions
+    `,
+    grade: 10,
+    tags: ["Frontend", "Backend", "Компьютерные сети", "CI/CD", "DevOps"],
+    path: "10-15",
+  },
+  {
     title: "Вводное занятие",
     description: `
 - Содержание курса
